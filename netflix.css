@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+background-color: #000;
+color: white;
+
+}
+
+
+.header {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+   
+    
+}
+
+
+.sib{
+    background-color: #e50914;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 75%;
+    left: 75%;
+    float: right;
+    font-size:16px;
+}
+
+.sib:hover{
+ background-color: #f40612;
+}
+
+.logo img{
+    width: 190px;
+    
+}
+
+
+.logo{
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+
+
+.half{
+  background-image: url('images/nback.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100dvh;
+}
+.half::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+.content h2{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.content p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.emailform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.einput{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.esubmit{
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+  background-color: #e50914;
+ cursor: pointer;
+    border-radius: 3px;
+    color: white;
+}
+
+.esubmit:hover{
+    background-color: #e40612;
+}
+
+.faq{
+    background-color: #000;
+    padding: 60px 100px;
+}
+
+.faq h3{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.faqc{
+    background-color:rgb(61, 61, 61);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    height: 75px;
+    width: 100%;
+}
+
+
+.reveal,.reveal2,.reveal3,.reveal4,.reveal5,.reveal6 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color:rgb(61, 61, 61);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    display: none;
+}
+
+
+.cancel,.cancel2,.cancel3,.cancel4,.cancel5,.cancel6{
+    width: 30px;
+    height: 30px;
+    border: none;
+    float: right;
+    margin-right: 20px;
+    display: none;
+}
+
+.plus,.plus2,.plus3,.plus4,.plus5,.plus6{
+  width: 30px;
+  height: 30px;
+  border: none;
+  float: right;
+  margin-right: 20px;
+}
+
+
+
+
+
+.qu{
+    color: #777;
+    font-size: 11px;
+}
+
+
+
+.dc{
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+.pt{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+.footer{
+    padding: 50px 7% 10px;
+    color: #777;
+    
+}
+
+
+.footercont{
+   display: flex;
+}
+
+.col{
+padding-top: 50px;
+padding-right: 100px;
+margin-bottom: 40px;
+
+}
+
+.col a{
+    display: block;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.grid{
+ display: inline-flex;
+ margin-bottom: 50px;
+}
+
+.grid p{
+    font-size: 20px;
+    
+}
+
+.gh{
+border-radius: 100px;
+width: 20px;
+height: 20px;
+}
+
+.gct{
+  width:23%;
+  margin-right: 15px;
+  padding: 30px 15px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right,rgb(42, 28, 66)  75%,rgb(116, 5, 79));
+  height: 50vh;
+  color:lightgray;
+}
+.st{
+position: relative;
+top: 37%;
+left: 70%;
+font-size:50px;
+color:rgb(165, 28, 119);
+background-color:rgb(116, 5, 79) ;
+}
+
+
+.dd{
+    margin-bottom: 40px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 7px 7px ;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    width: 140px;
+
+}
+
+.out{
+outline: 3px solid white;
+width: 140px;
+border-radius: 5px;
+display: none;
+}
+
+.dm{
+    display: none;
+    text-align: center;
+    border: none;
+}
+
+.drop{
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.lang{
+    width: 30px;
+    height: 20px;
+}
+
+.i1{
+    margin-left: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.images{
+    display: inline-flex;
+}
+
+.no{
+    position: relative;
+    bottom:40%;
+    font-size: 7rem;
+}
+
+@media only screen and (max-width: 430px) {
+    .content h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+   }
+
+   .content p{
+    font-size: 10px;
+    margin-bottom: 30px;
+   }
+
+   .content h2{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    
+   }
+   .einput{    
+    width: 250px;
+    margin-bottom: 10px;
+    height: 20px;
+  }
+
+  .emailform{
+    display: inline-block;
+}
+
+ .esubmit{
+    padding: 25px 40px;
+    padding-top: 10px;
+    font-size: 13px;
+    height: 20px;
+ }
+
+ .logo img{
+    width: 100px;
+    
+}
+
+
+  .logo{
+    padding-left: 1px;
+    padding-bottom: 50px;
+ }
+
+ .sib{
+   font-size: 13px;
+   padding: 4px 9px;
+   left:80%;
+ }
+
+ .half{
+    height: 70vh;
+    width: 375px;
+ }
+
+ .images{
+    display: block;
+}
+
+.no{
+    position: relative;
+    bottom:120px;
+    left: -20px;
+    font-size: 5rem;
+}
+
+.i1{
+    margin-left: 0;
+    margin-bottom: 0;
+    border-radius: 5px;
+    margin-right: 0;
+
+}
+
+.grid{
+    display: block;
+    margin-bottom: 50px;
+   }
+   
+   .gct{
+     width:85%;
+     margin-right: 0;
+     padding: 30px 15px;
+     margin-bottom: 30px;
+     border-radius: 20px;
+     background-image: linear-gradient(to bottom right,rgb(42, 28, 66)  75%,rgb(116, 5, 79));
+     height: 45vh;
+     color:lightgray;
+   }
+
+   .reveal,.reveal2,.reveal3,.reveal4,.reveal5,.reveal6 {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color:rgb(61, 61, 61);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    display: none; 
+    width: 250px;
+
+}
+
+.faq{
+    background-color: #000;
+    padding: 60px 30px;
+
+}
+
+.faq h3{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.faqc{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+}
+.cancel,.cancel2,.cancel3,.cancel4,.cancel5,.cancel6{
+    width: 15px;
+    height: 15px;
+}
+
+.plus,.plus2,.plus3,.plus4,.plus5,.plus6{
+  width: 15px;
+  height: 15px;
+}
+
+.pt{
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+
+.dc{
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+.hj{
+    margin-left: 15%;
+}
+
+.footer{
+    padding: 50px 7% 10px;
+    color: #777;
+    
+}
+
+
+.footercont{
+   display: block;
+   margin-top: 30px;
+}
+
+.col{
+padding-top: 10px;
+padding-right: 100px;
+margin-bottom: 15px;
+
+}
+
+.col a{
+    display: block;
+    margin-bottom: 15px;
+    color: #777;
+}
+.grid p{
+    font-size: 13px;
+}
+
+.grid h3{
+    font-size: 17px;
+}
+.fs{
+    font-size: 5rem;
+}
+.gh{
+height: 30px;  
+width: 20px;
+}
+
+}
