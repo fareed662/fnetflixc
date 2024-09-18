@@ -361,7 +361,7 @@ display: none;
 
  .half{
     height: 70vh;
-    width: 375px;
+    width: 100%;
  }
 
  .images{
@@ -494,9 +494,6 @@ margin-bottom: 15px;
 .fs{
     font-size: 5rem;
 }
-.gh{
-height: 30px;  
-width: 20px;
-}
+
 
 }
