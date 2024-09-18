@@ -68,6 +68,7 @@ color: white;
   text-align: center;
   justify-content: center;
   height: 100dvh;
+  width: 100%;
 }
 .half::before{
     content: '';
@@ -237,7 +238,7 @@ border-radius: 100px;
 }
 
 .gct{
-  width:23%;
+  width:100%;
   margin-right: 15px;
   padding: 30px 15px;
   border-radius: 20px;
@@ -389,7 +390,7 @@ display: none;
    }
    
    .gct{
-     width:85%;
+     width:100%;
      margin-right: 0;
      padding: 30px 15px;
      margin-bottom: 30px;
