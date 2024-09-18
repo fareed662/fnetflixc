@@ -57,7 +57,7 @@ color: white;
 
 
 .half{
-  background-image: url('images/nback.jpg');
+  background-image: url('nback.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -234,8 +234,6 @@ margin-bottom: 40px;
 
 .gh{
 border-radius: 100px;
-width: 20px;
-height: 20px;
 }
 
 .gct{
