@@ -19,9 +19,9 @@ const cancel4 = document.querySelector('.cancel4')
 const cancel5 = document.querySelector('.cancel5')
 const cancel6 = document.querySelector('.cancel6')
 const dd = document.querySelector('.dd')
-const dm = document.querySelector('.dm')
+const dm = document.querySelector('.style')
 
-const im = document.querySelector('.images')
+
 const faqc = document.querySelector('.faqc')
 
 
@@ -31,7 +31,7 @@ plus.addEventListener('click', function(a){
     reveal.style.display='block';
    plus.style.display='none';
    cancel.style.display='block ';
-   
+   reveal.style.transition='display 2s'
    
    })
 
@@ -130,17 +130,113 @@ cancel6.addEventListener('click', function(l){
 
 dd.addEventListener('click', function(p) {
     p.preventDefault()
-    dm.style.display= 'block'
+    dd.classList.add('out')
 })
 
-console.log(im.length)
-//function show(img){
-    //for (i = images.length; i > 4; i--) {
-        //images[i].style.display = "none";  
-        
-     // }
 
+const images = document.querySelector('.images')
+
+
+
+
+const next =document.querySelector('.next')
+const prev =document.querySelector('.prev')
+
+
+images.classList.add('rty');
+
+const a = images.children;
+let index=0
+
+//prev.style.display='none';
+function USLIDEPOS(){
+    for (  i=0; i<=a.length; i++){
+        a[i].style.transform = `translateX(-${index* 140}px)`;
+        a[i].classList.add('trans');
+
+       if(window.innerWidth <= 500){
+        a[i].style.transform = `translateX(-${index* 85}px)`;
+       }
+      
+    }
+    
+       
+}
+
+next.addEventListener('click', function (u) {
+    u.preventDefault()
+    index = (index + 1)% a.length;
+    USLIDEPOS();
+    
+    
+})
+
+
+prev.addEventListener('click', function(n) {
+    n.preventDefault()
+    index = (index -1 + a.length)% a.length;
+    USLIDEPOS();
+})
+
+
+
+
+/*
+next.addEventListener('click', function(u) {
+    u.preventDefault()
+    images.classList.remove('rty');
+    images.classList.add('none');
+    images2.classList.remove('none');
+    images2.classList.add('rty');
+})
+
+prev.addEventListener('click', function(n) {
+    n.preventDefault()
+    images.classList.add('rty');
+    images.classList.remove('none');
+    images2.classList.add('none');
+    images2.classList.remove('rty');
+})
+
+*/  
+
+function change(n) {
+    
+}
+
+/*
+
+const slide = document.getElementsByClassName('.i1')
+
+
+let index = 0;
+console.log(slide.length)
+
+function change(n) {
+    index+= n;
+    if(index >= slide.length ){
+        index = 0;
+    }else if(index<0){
+      index = slide.length - 1;
+    }
+}
+
+function uslide() {
+   for(let i=0; i<slide.length; i++){
+      slide[i].classList.remove("active");
+   }
+   slide[index].classList.add("active");
+}
+*/
+
+//document.querySelector('.next').onclick = function(n) {
+  //  n.preventDefault()
+    
 //}
 
 
-//images.show();
+
+
+
+
+//tra(-${curentindex*300}px)

@@ -83,6 +83,11 @@ color: white;
     background: rgba(0,0,0,0.6);
     z-index: -1;
 }
+.content h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
 
 
 .content h2{
@@ -107,6 +112,12 @@ color: white;
     width: 300px;
     margin-right: 10px;
     border-radius: 3px;
+   background-color: #777;
+}
+
+.einput::placeholder{
+ color: white;
+ opacity: 0.9;
 }
 
 .esubmit{
@@ -126,7 +137,48 @@ color: white;
 .faq{
     background-color: #000;
     padding: 60px 100px;
+    position: relative;
+    border-radius: 20px;
 }
+.scurve{
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 105%;
+    height: 5%;
+    right: 0%;
+    top: 96%;
+    
+    background-color: #e50914;
+    border-bottom: none;
+    border-bottom-width: initial;
+    border-bottom-color: initial;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.curve{
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 105%;
+    height: 5%;
+    right: 0%;
+    top: 0;
+    top: 97%;
+    z-index: 1;
+    background-color: #e50914;
+    border-bottom: none;
+    border-bottom-width: initial;
+    border-bottom-color: initial;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 90%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+
+
+
+
 
 .faq h3{
     font-size: 1.5rem;
@@ -157,6 +209,7 @@ color: white;
     padding-bottom: 20px;
     padding-right: 20px;
     display: none;
+    
 }
 
 
@@ -191,7 +244,6 @@ color: white;
 .dc{
     margin-bottom: 30px;
     align-items: center;
-    margin-left: 20%;
 }
 
 
@@ -242,7 +294,7 @@ border-radius: 100px;
 }
 
 .gct{
-  
+  width: 100%;
   margin-right: 15px;
   padding: 30px 15px;
   border-radius: 20px;
@@ -274,9 +326,7 @@ background-color:rgb(116, 5, 79) ;
 
 .out{
 outline: 3px solid white;
-width: 140px;
 border-radius: 5px;
-display: none;
 }
 
 .dm{
@@ -294,30 +344,130 @@ display: none;
 .lang{
     width: 30px;
     height: 20px;
+    border: none;
 }
 
-.i1{
+
+.a{
     margin-left: 10px;
     margin-bottom: 50px;
     border-radius: 5px;
     margin-right: 30px;
+    position: relative;
+    transform: translateX(0px);
+}
+
+.trans{
+    transition: transform 0.5s ease-out;
+}
+
+.strans{
+    transform: translateX(0px);
+    transition: transform 2s ease-in-out;
+}
+
+
+.prev{
+    font-size: 2rem;
+    height: 100px;
+    color: white;
+    background-color:rgb(61, 61, 61);
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: 2;
+    position: relative;
+    top: 100px; 
+    left: -6.4%;
+    border-radius: 8px;
+}
+
+.prev:hover{
+ opacity: 1;
+}
+
+
+.next{
+    border-radius: 8px;
+    font-size: 2rem;
+    top: 100px;
+    height: 100px;
+    z-index: 2;
+    color: white;
+    background-color:rgb(61, 61, 61);
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    
+    border: none;
+    font-weight: bold;
+    opacity: 0.8;
+    left: 86.6%;
+}
+
+
+.next:hover{
+    opacity:1;
 }
 
 .images{
+    position: relative;
+    width: 90%;
     display: inline-flex;
+    overflow: hidden;
+    left: -7.3%;
+
+}
+
+.icont{
+    display: inline-flex;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.none{
+display: none;
+transition: display 2s ease;
+}
+
+.rty{
+   display: inline-flex;
+   transition: display 2s ease;
 }
 
 .no{
     position: relative;
     bottom:40%;
     font-size: 7rem;
+    
 }
 
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1000px) and (orientation:portrait){
+
+    .icont{
+     margin-bottom: 0;
+     height: 200px;
+    }
+
+    .images{
+        width: 90%;
+        left: -20.3%;
+        
+    }
+
+    .a{
+   
+        height: 60%;
+        margin-right: 10px;
+     }
+    
     .content h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
-        font-weight: bold;
+        font-weight: 1000;
    }
 
    .content p{
@@ -326,7 +476,7 @@ display: none;
    }
 
    .content h2{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     
    }
@@ -370,15 +520,12 @@ display: none;
     width: 100%;
  }
 
- .images{
-    display: block;
-}
-
+ 
 .no{
     position: relative;
     bottom:120px;
-    left: -20px;
-    font-size: 5rem;
+    left: -5px;
+    font-size: 2.5rem;
 }
 
 .i1{
@@ -392,16 +539,17 @@ display: none;
 .grid{
     display: block;
     margin-bottom: 50px;
+    position: relative;
    }
    
    .gct{
-     width: 85%;
+     width: 100%;
      margin-right: 0;
      padding: 30px 15px;
      margin-bottom: 30px;
      border-radius: 20px;
      background-image: linear-gradient(to bottom right,rgb(42, 28, 66)  75%,rgb(116, 5, 79));
-     height: 45vh;
+     height: 20vh;
      color:lightgray;
    }
 
@@ -415,13 +563,13 @@ display: none;
     padding-bottom: 20px;
     padding-right: 20px;
     display: none; 
-    width: 250px;
+    
 
 }
 
 .faq{
     background-color: #000;
-    padding: 60px 30px;
+    padding: 60px 50px;
 
 }
 
@@ -439,7 +587,7 @@ display: none;
     margin-bottom: 1px;
     margin-top: 10px;
     height: 50px;
-    width: 300px;
+
 }
 .cancel,.cancel2,.cancel3,.cancel4,.cancel5,.cancel6{
     width: 15px;
@@ -501,25 +649,55 @@ margin-bottom: 15px;
     font-size: 5rem;
 }
 
-
+.prev{
+    font-size: 1rem;
+    height: 90px;
+    color: white;
+    background-color:rgb(61, 61, 61);
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: 2;
+    position: relative;
+    top: 15px; 
+    left: -22.4%;border-radius: 8px;
 }
 
 
-@media only screen and (min-width: 415px){
-    .images{
-        display: inline-flex;
-    }
+.next{
+    border-radius: 8px;
+    font-size: 1rem;
+    top: 15px;
+    height: 90px;
+    z-index: 2;
+    color: white;
+    background-color:rgb(61, 61, 61);
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    
+    border: none;
+    font-weight: bold;
+    opacity: 0.8;
+    left: 82%;
+}
 
-    .i1{
-        margin-right: 30px;
-        width: 80%;
-    }
+    
+}
+ 
+@media only screen and (max-width: 1000px) and (orientation:landscape) {
+   
+
+    
     .gct{
-        width:40%;
-        margin-right: 10px;
+        width:100%;
+        margin-bottom: 30px;
+
       }
       .grid{
-        display: inline-flex;
+        display: block;
         
       }
       .faqc{
@@ -530,12 +708,52 @@ margin-bottom: 15px;
         display: flex;
      }
 
-     .dc{
-        margin-bottom: 30px;
-        margin-left: 36%;
+     
+    .no{
+        position: relative;
+        bottom:40%;
+        font-size: 5rem;
     }
-    .hj{
-        margin-left:13%;
-    }
+
+    header {
+        position: absolute;
+        padding: 10px;
+}
+ 
+
+.content h1{
+ font-size: 2rem;
+}
+.logo{
+    position: relative;
+    top: -6px;
+    left: -10%;
+}
+
+.gh{
+    height: 80px;
+}
+
+
+.a{
+    height: 55%;
+    margin-right: 10px;
+}
+
+.images{
+    
+    left: -10.3%;
     
 }
+.prev{
+    left: -10%;
+    
+}
+
+
+.next{
+    left: 88%;
+}
+}
+
+
